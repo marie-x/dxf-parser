@@ -24,8 +24,8 @@ import log from 'loglevel';
 //log.setLevel('debug');
 //log.setLevel('info');
 //log.setLevel('warn');
-log.setLevel('error');
-//log.setLevel('silent');
+//log.setLevel('error');
+log.setLevel('silent');
 
 function registerDefaultEntityHandlers(dxfParser) {
 	// Supported entities here (some entity code is still being refactored into this flow)
