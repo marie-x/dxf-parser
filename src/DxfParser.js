@@ -20,8 +20,8 @@ import Text from './entities/text';
 
 import log from 'loglevel';
 
-log.setLevel('trace');
-//log.setLevel('debug');
+//log.setLevel('trace');
+log.setLevel('debug');
 //log.setLevel('info');
 //log.setLevel('warn');
 //log.setLevel('error');
