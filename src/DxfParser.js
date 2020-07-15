@@ -21,11 +21,11 @@ import Text from './entities/text';
 import log from 'loglevel';
 
 //log.setLevel('trace');
-//log.setLevel('debug');
+log.setLevel('debug');
 //log.setLevel('info');
 //log.setLevel('warn');
 //log.setLevel('error');
-log.setLevel('silent');
+//log.setLevel('silent');
 
 function registerDefaultEntityHandlers(dxfParser) {
 	// Supported entities here (some entity code is still being refactored into this flow)
@@ -631,6 +631,10 @@ DxfParser.prototype._parse = function(dxfString) {
 		layers[layerName] = layer;
 
 		return layers;
+	};
+
+	var parseStyles = function() {
+		console.log('====> parseStyles')
 	};
 
 	var tableDefinitions = {
