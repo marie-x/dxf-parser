@@ -21,10 +21,10 @@ import Text from './entities/text';
 import log from 'loglevel';
 
 //log.setLevel('trace');
-log.setLevel('debug');
+//log.setLevel('debug');
 //log.setLevel('info');
 //log.setLevel('warn');
-//log.setLevel('error');
+log.setLevel('error');
 //log.setLevel('silent');
 
 function registerDefaultEntityHandlers(dxfParser) {
@@ -634,7 +634,68 @@ DxfParser.prototype._parse = function(dxfString) {
 	};
 
 	var parseStyles = function() {
-		console.log('====> parseStyles')
+		var styles = {},
+		styleName,
+		style = {};
+
+		log.debug('Style {');
+		curr = scanner.next();
+		while(!groupIs(0, 'ENDTAB')) {
+			switch(curr.code) {
+				case 2: // style name
+					style.name = curr.value;
+					styleName = curr.value;
+					curr = scanner.next();
+					break;
+				case 40: // fixed text height
+					style.fixedTextHeight = curr.value;
+					curr = scanner.next();
+					break;
+				case 41: // width factor
+					style.widthFactor = curr.value;
+					curr = scanner.next();
+					break;
+				case 50:
+					style.obliqueAngle = curr.value;
+					curr = scanner.next();
+					break;
+				case 71:
+					style.textGenerationFlags = curr.value; // Place holder. Need to figure out how to parse
+					curr = scanner.next();
+					break;
+				case 3:
+					style.primaryFontName = curr.value;
+					curr = scanner.next();
+					break;
+				case 4:
+					style.bigFontName = curr.value;
+					curr = scanner.next();
+					break;
+				case 1071:
+					style.fontDetails = curr.value;
+					curr = scanner.next();
+					break;
+				case 0:
+					// New Style
+					if(curr.value === 'STYLE') {
+						log.debug('}');
+						styles[styleName] = style;
+						log.debug('Style {');
+						style = {};
+						styleName = undefined;
+						curr = scanner.next();
+					}
+					break;
+				default:
+					logUnhandledGroup(curr);
+					curr = scanner.next();
+					break;
+			}
+		}
+		log.debug('}');
+		styles[styleName] = style;
+
+		return styles;
 	};
 
 	var tableDefinitions = {
@@ -655,6 +716,12 @@ DxfParser.prototype._parse = function(dxfString) {
 			tableName: 'layer',
 			dxfSymbolName: 'LAYER',
 			parseTableRecords: parseLayers
+		},
+		STYLE: {
+			tableRecordsProperty: 'styles',
+			tableName: 'style',
+			dxfSymbolName: 'STYLE',
+			parseTableRecords: parseStyles
 		}
 	};
 

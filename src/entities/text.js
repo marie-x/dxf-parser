@@ -37,6 +37,18 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
             case 73: // Vertical alignment
                 entity.valign = curr.value;
                 break;
+            case 71:
+                // Text generation flags (optional, default = 0):
+                // 2 = Text is backward (mirrored in X)
+                // 4 = Text is upside down (mirrored in Y)
+                entity.textGenFlags = curr.value;
+                break;
+            case 39:
+                entity.thickness = curr.value;
+                break;
+            case 7:
+                entity.styleName = curr.value;
+                break;
             default: // check common entity attributes
                 helpers.checkCommonEntityProperties(entity, curr);
                 break;

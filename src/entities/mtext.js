@@ -35,7 +35,24 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.attachmentPoint = curr.value;
                 break;
             case 72:
+                // Drawing direction:
+                // 1 = Left to right
+                // 3 = Top to bottom
+                // 5 = By style (the flow direction is inherited from the associated text style)
                 entity.drawingDirection = curr.value;
+                break;
+            case 7:
+                entity.styleName = curr.value;
+                break;
+            case 90:
+                // Background fill setting:
+                // 0 = Background fill off
+                // 1 = Use background fill color
+                // 2 = Use drawing window color as background fill color
+                entity.backgroundFill = curr.value;
+                break;
+            case 63:
+                entity.backgroundFillColor = curr.value;
                 break;
             default:
                 helpers.checkCommonEntityProperties(entity, curr);
