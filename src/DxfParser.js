@@ -225,7 +225,7 @@ DxfParser.prototype._parse = function(dxfString) {
 
 	var parseBlock = function() {
 		var block = {};
-		let subClassHandles = []
+		block.subClassHandles = []
 		curr = scanner.next();
 
 		while(curr.value !== 'EOF') {
