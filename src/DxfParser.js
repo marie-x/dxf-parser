@@ -225,6 +225,7 @@ DxfParser.prototype._parse = function(dxfString) {
 
 	var parseBlock = function() {
 		var block = {};
+		let subClassHandles = []
 		curr = scanner.next();
 
 		while(curr.value !== 'EOF') {
@@ -272,6 +273,7 @@ DxfParser.prototype._parse = function(dxfString) {
 					break;
 				case 100:
 					// ignore class markers
+					block.subClassHandles.push(curr.value)
 					curr = scanner.next();
 					break;
 				case 330:
@@ -722,7 +724,7 @@ DxfParser.prototype._parse = function(dxfString) {
 			tableName: 'style',
 			dxfSymbolName: 'STYLE',
 			parseTableRecords: parseStyles
-		}
+		},
 	};
 
 	/**
