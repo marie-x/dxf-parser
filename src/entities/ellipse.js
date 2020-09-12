@@ -19,6 +19,12 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
             case 11:
                 entity.majorAxisEndPoint = helpers.parsePoint(scanner);
                 break;
+            case 21:
+                entity.majorAxisEndPointY = curr.value;
+                break;
+            case 31:
+                entity.majorAxisEndPointZ = curr.value;
+                break;
             case 40:
                 entity.axisRatio = curr.value;
                 break;
@@ -27,6 +33,15 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 break;
             case 42:
                 entity.endAngle = curr.value;
+                break;
+            case 210:
+                entity.extrusionDirectionX = curr.value;
+                break;
+            case 220:
+                entity.extrusionDirectionY = curr.value;
+                break;
+            case 230:
+                entity.extrusionDirectionZ = curr.value;
                 break;
             case 2:
                 entity.name = curr.value;
