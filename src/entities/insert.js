@@ -28,8 +28,28 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
             case 10:
                 entity.position = helpers.parsePoint(scanner);
                 break;
+            case 20:
+                entity.insertionPointY = curr.value;
+                break;
+            case 30:
+                entity.insertionPointZ = curr.value;
+                break;
+            case 41:
+                entity.xScale = curr.value;
+                break;
+            case 42:
+                entity.yScale = curr.value;
+                break;
+            case 43:
+                entity.zScale = curr.value;
+                break;
             case 50:
                 entity.rotation = curr.value;
+                break;
+            case 66:
+                // Variable attributes-follow flag (optional; default = 0); if the value of attributes-follow flag is 1, 
+                // a series of attribute entities is expected to follow the insert, terminated by a seqend entity
+                entity.attributesFollow = curr.value;
                 break;
             case 70:
                 entity.columnCount = curr.value;
