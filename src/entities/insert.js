@@ -28,12 +28,6 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
             case 10:
                 entity.position = helpers.parsePoint(scanner);
                 break;
-            case 20:
-                entity.insertionPointY = curr.value;
-                break;
-            case 30:
-                entity.insertionPointZ = curr.value;
-                break;
             case 41:
                 entity.xScale = curr.value;
                 break;
