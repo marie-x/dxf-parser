@@ -7,7 +7,7 @@ import AttDef from './entities/attdef';
 import Circle from './entities/circle';
 import Dimension from './entities/dimension';
 import Ellipse from './entities/ellipse';
-// import Hatch from './entities/hatch';
+import Hatch from './entities/hatch';
 import Insert from './entities/insert';
 import Line from './entities/line';
 import LWPolyline from './entities/lwpolyline';

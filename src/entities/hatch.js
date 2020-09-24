@@ -38,5 +38,5 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
     //     }
     //     curr = scanner.next();
     // }
-    // return entity;
+    return entity;
 };
