@@ -45,7 +45,7 @@ function registerDefaultEntityHandlers(dxfParser) {
 	dxfParser.registerEntityHandler(Solid);
 	dxfParser.registerEntityHandler(Spline);
 	dxfParser.registerEntityHandler(Text);
-	// dxfParser.registerDefaultEntityHandlers(Hatch);
+	dxfParser.registerEntityHandler(Hatch);
 	//dxfParser.registerEntityHandler(require('./entities/vertex'));
 }
 
