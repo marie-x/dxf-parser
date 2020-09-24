@@ -7,6 +7,7 @@ import AttDef from './entities/attdef';
 import Circle from './entities/circle';
 import Dimension from './entities/dimension';
 import Ellipse from './entities/ellipse';
+import Hatch from './entities/hatch';
 import Insert from './entities/insert';
 import Line from './entities/line';
 import LWPolyline from './entities/lwpolyline';
@@ -44,6 +45,7 @@ function registerDefaultEntityHandlers(dxfParser) {
 	dxfParser.registerEntityHandler(Solid);
 	dxfParser.registerEntityHandler(Spline);
 	dxfParser.registerEntityHandler(Text);
+	dxfParser.registerDefaultEntityHandlers(Hatch);
 	//dxfParser.registerEntityHandler(require('./entities/vertex'));
 }
 
