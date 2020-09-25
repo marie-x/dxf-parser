@@ -15,23 +15,84 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
         if(curr.code === 0) break;
 
         switch(curr.code) {
-            // case 10: // X coordinate of point
-            //     entity.center = helpers.parsePoint(scanner);
-            //     break;
-            // case 40: // radius
-            //     entity.radius = curr.value;
-            //     break;
-            // case 50: // start angle
-            //     entity.startAngle = Math.PI / 180 * curr.value;
-            //     break;
-            // case 51: // end angle
-            //     endAngle = Math.PI / 180 * curr.value;
-            //     if(endAngle < entity.startAngle)
-            //         entity.angleLength = endAngle + 2 * Math.PI - entity.startAngle;
-            //     else
-            //         entity.angleLength = endAngle - entity.startAngle;
-            //     entity.endAngle = endAngle;
-            //     break;
+            case 2:
+                entity.hatchPatternName = curr.value;
+                break;
+            case 10:
+                entity.elevationPoint = helpers.parsePoint(scanner);
+                break;
+            case 210:
+                entity.extrusionDirection = helpers.parsePoint(scanner);
+                break;
+            case 70:
+                entity.solidFillFlag = curr.value;
+                break;
+            case 63:
+                entity.patternFillColor = curr.value;
+                break;
+            case 71:
+                entity.associativityFlag = curr.value;
+                break;
+            case 91:
+                entity.numberOfBoundaryPaths = curr.value;
+                break;
+            case 75:
+                entity.hatchStyle = curr.value;
+                break;
+            case 76:
+                entity.hatchPatternType = curr.value;
+                break;
+            case 52:
+                entity.hatchPatternAngle = curr.value;
+                break;
+            case 41:
+                entity.hatchPatternScaleOrSpacing = curr.value;
+                break;
+            case 73:
+                entity.boundaryAnnotationFlag = curr.value;
+                break;
+            case 77:
+                entity.hatchPatternDoubleFill = curr.value;
+                break;
+            case 78:
+                entity.numberPatternDefinitionLines = curr.value;
+                break;
+            case 47:
+                entity.pixelSize = curr.value;
+                break;
+            case 98:
+                entity.seedPoints = curr.value;
+                break;
+            case 11:
+                entity.offsetVector = curr.value;
+                break;
+            case 99:
+                entity.numberDegenerateBoundaryPaths = curr.value;
+                break;
+            // 10/20 should probably use parsePoint helper
+            // Also, 10 is a repeat, which, I guess means order matters . . .
+            case 10:
+                entity.seedPointX = curr.value;
+                break;
+            case 20:
+                entity.seedPointY = curr.value;
+                break;
+            case 450:
+                entity.solidHatchOrGradient = curr.value;
+                break;
+            // 451 -- reserved for future use
+            case 452:
+                entity.howColorsUsed = curr.value;
+                break;
+            case 453:
+                entity.numberColors = curr.value;
+                break;
+            case 460:
+                entity.rotationAngle = curr.value;
+                break;
+            case 461:
+                entity.gradientDefinition = curr.value;
+                break;
             default: // ignored attribute
                 helpers.checkCommonEntityProperties(entity, curr);
                 break;
