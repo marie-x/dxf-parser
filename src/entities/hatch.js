@@ -9,7 +9,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
     console.log(scanner)
     console.log(curr)
     var entity, endAngle;
-    // entity = { type: curr.value };
+    entity = { type: curr.value };
     // curr = scanner.next();
     // while(curr !== 'EOF') {
     //     if(curr.code === 0) break;
