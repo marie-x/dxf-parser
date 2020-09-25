@@ -8,7 +8,7 @@ EntityParser.ForEntityName = 'HATCH';
 EntityParser.prototype.parseEntity = function(scanner, curr) {
     console.log(scanner)
     console.log(curr)
-    // var entity, endAngle;
+    var entity, endAngle;
     // entity = { type: curr.value };
     // curr = scanner.next();
     // while(curr !== 'EOF') {
