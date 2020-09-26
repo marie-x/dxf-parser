@@ -21,24 +21,52 @@ var EdgeTypes = {
     4: 'spline', // Lord, have mercy on our souls
 }
 
-
 EntityParser.prototype.parseEntity = function(scanner, curr) {
     var entity;
     entity = { type: curr.value };
+    // TODO: clean this up by adding all of this to constructor
+    entity.elevationPoint = {
+        x: null,
+        y: null,
+        z: null,
+    }
+    
+    entity.extrusionDirection = {
+        x: null,
+        y: null,
+        z: null,
+    }
+    entity.seedPoint = {
+        x: null,
+        y: null,
+    }
+
     entity.boundaryPath = {};
     curr = scanner.next();
     while(curr !== 'EOF') {
         if(curr.code === 0) break;
 
         switch(curr.code) {
-            case 2:
-                entity.hatchPatternName = curr.value;
-                break;
             case 10:
-                entity.elevationPoint = helpers.parsePoint(scanner);
+                entity.elevationPoint.x = curr.value;
+                break;
+            case 20:
+                entity.elevationPoint.y = curr.value;
+                break;
+            case 30:
+                entity.elevationPoint.z = curr.value;
                 break;
             case 210:
-                entity.extrusionDirection = helpers.parsePoint(scanner);
+                entity.extrusionDirection.x = curr.value;
+                break;
+            case 220:
+                entity.extrusionDirection.y = curr.value;
+                break;
+            case 230:
+                entity.extrusionDirection.z = curr.value;
+                break;
+            case 2:
+                entity.hatchPatternName = curr.value;
                 break;
             case 70:
                 entity.solidFillFlag = curr.value;
