@@ -29,7 +29,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.elevationPoint = helpers.parsePoint(scanner)
                 break;
             case 210:
-                entity.extrusionDirection = helpers.parsePoint;
+                entity.extrusionDirection = helpers.parsePoint(scanner);
                 break;
             case 2:
                 entity.hatchPatternName = curr.value;

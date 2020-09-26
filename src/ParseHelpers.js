@@ -49,7 +49,6 @@ export function parseBoundaryPaths(scanner, current, entity) {
     if (!entity.boundaryPaths.numPaths || entity.boundaryPaths.numPaths === 0) {
         console.log('Not a boundary path')
         console.log(current)
-        console.log(entity)
     }
     var EdgeTypes = {
         1: 'line',
