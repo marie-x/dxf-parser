@@ -193,17 +193,17 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                         }
                                         switch(curr.code) {
                                             case 10:
-                                                entity.boundaryPath.edgeData.startPoint.x = curr.value;
+                                                entity.boundaryPath.edgeData.startPoint = helpers.parsePoint(scanner);
                                                 break;
-                                            case 20:
-                                                entity.boundaryPath.edgeData.startPoint.y = curr.value;
-                                                break;
+                                            // case 20:
+                                            //     entity.boundaryPath.edgeData.startPoint.y = curr.value;
+                                            //     break;
                                             case 11:
-                                                entity.boundaryPath.edgeData.endPoint.x = curr.value;
+                                                entity.boundaryPath.edgeData.endPoint = helpers.parsePoint(scanner);
                                                 break;
-                                            case 21:
-                                                entity.boundaryPath.edgeData.endPoint.y = curr.value;
-                                                break;
+                                            // case 21:
+                                            //     entity.boundaryPath.edgeData.endPoint.y = curr.value;
+                                            //     break;
                                         }
                                     // could be smarter about handling shared attributes of arc and ellipse. not feeling smart.
                                     case 'arc':
