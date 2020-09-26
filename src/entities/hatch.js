@@ -6,8 +6,6 @@ export default function EntityParser() {}
 EntityParser.ForEntityName = 'HATCH';
 
 EntityParser.prototype.parseEntity = function(scanner, curr) {
-    console.log(scanner)
-    console.log(curr)
     var entity, endAngle;
     entity = { type: curr.value };
     curr = scanner.next();
@@ -94,7 +92,10 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.gradientDefinition = curr.value;
                 break;
             default: // ignored attribute
-                helpers.checkCommonEntityProperties(entity, curr);
+                if (!helpers.checkCommonEntityProperties(entity, curr)) {
+                    console.log(`curr.code = ${curr.code}`);
+                    console.log(curr.value);
+                }
                 break;
         }
         curr = scanner.next();
