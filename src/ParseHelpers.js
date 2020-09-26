@@ -43,9 +43,10 @@ export function parsePoint(scanner) {
     return point;
 };
 
-export function parseBoundaryPaths(scanner, entity) {
+export function parseBoundaryPaths(scanner, current, entity) {
     // console.log(scanner)
     console.log(entity.boundaryPath)
+    
 
     var BoundaryPathTypes = {
         0: 'default',
@@ -64,11 +65,6 @@ export function parseBoundaryPaths(scanner, entity) {
     }
     var boundaryPath = entity.boundaryPath;
 
-    var curr = scanner.next();
-
-    if (curr.code === 92) {
-
-    };
 
 
   // http://help.autodesk.com/view/OARX/2018/ENU/?guid=GUID-DC5215D6-E73F-4DFF-8BE9-01CA9610FAEE
