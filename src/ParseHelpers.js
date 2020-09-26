@@ -46,8 +46,8 @@ export function parsePoint(scanner) {
 export function parseBoundaryPath(scanner) {
     // console.log(scanner)
     var boundaryPath = {};
-    var last = scanner.rewind();
-    console.log(last)
+    var next = scanner.next();
+    console.log(next)
 
 }
 
