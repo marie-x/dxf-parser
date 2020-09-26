@@ -190,6 +190,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                         entity.boundaryPath.edgeData = {}
                                         switch(curr.code) {
                                             case 10:
+                                                console.log(`startPoint.x = ${curr.value}`)
                                                 entity.boundaryPath.edgeData.startPoint = helpers.parsePoint(scanner);
                                                 break;
                                             // case 20:
