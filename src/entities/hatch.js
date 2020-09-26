@@ -22,25 +22,9 @@ var EdgeTypes = {
 }
 
 EntityParser.prototype.parseEntity = function(scanner, curr) {
-    console.log(curr)
+    // console.log(curr)
     var entity;
     entity = { type: curr.value };
-    // TODO: clean this up by adding all of this to constructor
-    entity.elevationPoint = {
-        x: null,
-        y: null,
-        z: null,
-    }
-    
-    entity.extrusionDirection = {
-        x: null,
-        y: null,
-        z: null,
-    }
-    entity.seedPoint = {
-        x: null,
-        y: null,
-    }
 
     entity.boundaryPath = {};
     curr = scanner.next();
@@ -49,22 +33,10 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
 
         switch(curr.code) {
             case 10:
-                entity.elevationPoint.x = curr.value;
-                break;
-            case 20:
-                entity.elevationPoint.y = curr.value;
-                break;
-            case 30:
-                entity.elevationPoint.z = curr.value;
+                entity.elevationPoint = helpers.parsePoint(scanner)
                 break;
             case 210:
-                entity.extrusionDirection.x = curr.value;
-                break;
-            case 220:
-                entity.extrusionDirection.y = curr.value;
-                break;
-            case 230:
-                entity.extrusionDirection.z = curr.value;
+                entity.extrusionDirection = helpers.parsePoint;
                 break;
             case 2:
                 entity.hatchPatternName = curr.value;
@@ -115,10 +87,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.boundaryPath.numDegeneratePaths = curr.value;
                 break;
             case 10:
-                entity.seedPoint.x = curr.value;
-                break;
-            case 20:
-                entity.seedPoint.y = curr.value;
+                entity.seedPoint.x = helpers.parsePoint(scanner);
                 break;
             case 450:
                 entity.solidHatchOrGradient = curr.value;
