@@ -187,10 +187,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                 // Edge data group codes based on edge type
                                 switch (entity.boundaryPath.edgeType) {
                                     case 'line':
-                                        entity.boundaryPath.edgeData = {
-                                            startPoint: {x: null, y: null},
-                                            endPoint: {x: null, y: null},
-                                        }
+                                        entity.boundaryPath.edgeData = {}
                                         switch(curr.code) {
                                             case 10:
                                                 entity.boundaryPath.edgeData.startPoint = helpers.parsePoint(scanner);
