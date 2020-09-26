@@ -14,6 +14,13 @@ var BoundaryPathTypes = {
     16: 'outermost',
 }
 
+var EdgeTypes = {
+    1: 'line',
+    2: 'circluar-arc',
+    3: 'elliptical-arc',
+    4: 'spline', // Lord, have mercy on our souls
+}
+
 
 EntityParser.prototype.parseEntity = function(scanner, curr) {
     var entity;
@@ -141,7 +148,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                 entity.boundaryPath.numEdges = curr.value;
                                 break;
                             case 72:
-                                entity.boundaryPath.edgeType = curr.value;
+                                entity.boundaryPath.edgeType = EdgeTypes[curr.value];
                                 break;
                             case 97:
                                 entity.boundaryPath.numSourceObjects = curr.value;
