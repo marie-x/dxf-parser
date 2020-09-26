@@ -5,6 +5,15 @@ export default function EntityParser() {}
 
 EntityParser.ForEntityName = 'HATCH';
 
+var BoundaryPathTypes = {
+    0: 'default',
+    1: 'external',
+    2: 'polyline',
+    4: 'derived',
+    8: 'textbox',
+    16: 'outermost',
+};
+
 EntityParser.prototype.parseEntity = function(scanner, curr) {
     // console.log(curr)
     var entity;

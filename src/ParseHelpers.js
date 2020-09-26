@@ -46,16 +46,6 @@ export function parsePoint(scanner) {
 export function parseBoundaryPaths(scanner, current, entity) {
     // console.log(scanner)
     console.log(entity.boundaryPath)
-    
-
-    var BoundaryPathTypes = {
-        0: 'default',
-        1: 'external',
-        2: 'polyline',
-        4: 'derived',
-        8: 'textbox',
-        16: 'outermost',
-    };
 
     var EdgeTypes = {
         1: 'line',
