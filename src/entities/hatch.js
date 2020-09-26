@@ -19,7 +19,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
     var entity;
     entity = { type: curr.value };
 
-    entity.boundaryPath = {};
+    entity.boundaryPaths = {};
     curr = scanner.next();
     while(curr !== 'EOF') {
         if(curr.code === 0) break;
@@ -44,10 +44,10 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.associativityFlag = curr.value;
                 break;
             case 91:
-                entity.boundaryPath.numPaths = curr.value;
+                entity.boundaryPaths.numPaths = curr.value;
                 break;
             case 92:
-                entity.boundaryPath.type = BoundaryPathTypes[curr.value];
+                entity.boundaryPaths.type = BoundaryPathTypes[curr.value];
                 break;
             case 75:
                 entity.hatchStyle = curr.value;
