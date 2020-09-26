@@ -187,7 +187,9 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                 // Edge data group codes based on edge type
                                 switch (entity.boundaryPath.edgeType) {
                                     case 'line':
-                                        entity.boundaryPath.edgeData = {}
+                                        console.log('This is a HATCH with LINE edgeType')
+                                        console.log(curr)
+                                        // entity.boundaryPath.edgeData = {}
                                         switch(curr.code) {
                                             case 10:
                                                 console.log(`startPoint.x = ${curr.value}`)
