@@ -135,8 +135,21 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                 console.log('Some shit we do not know how to handle in a HATCH POLYLINE. (Fuck you)^2')
                                 break;
                         }
-                    } else if (entity.boundaryPath.type !== BoundaryPathTypes[2] && curr.code === 93) {
-                        entity.boundaryPath.numEdges = curr.value;
+                    } else if (entity.boundaryPath.type !== BoundaryPathTypes[2]) {
+                        switch (curr.code) {
+                            case 93:
+                                entity.boundaryPath.numEdges = curr.value;
+                                break;
+                            case 72:
+                                entity.boundaryPath.edgeType = curr.value;
+                                break;
+                            case 97:
+                                entity.boundaryPath.numSourceObjects = curr.value;
+                                break;
+                            case 330:
+                                entity.boundaryPath.sourceObjects = curr.value; // going to need to write a function to parse this
+                                break;
+                        }
                     }
                 }
                 break;
