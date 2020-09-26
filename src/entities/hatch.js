@@ -104,10 +104,38 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 break;
             default: // ignored attribute
                 if (!helpers.checkCommonEntityProperties(entity, curr)) {
+                    // http://help.autodesk.com/view/OARX/2018/ENU/?guid=GUID-DC5215D6-E73F-4DFF-8BE9-01CA9610FAEE
                     if (curr.code === 92) {
                         entity.boundaryPath.type = BoundaryPathTypes[curr.value];
                     }
-                    if (entity.boundaryPath.type !== BoundaryPathTypes[2] && curr.code === 93) {
+                    if (entity.boundaryPath.type === BoundaryPathTypes[2]) {
+                        console.log('Processing attributes of HATCH POLYLINE. Fuck you.')
+                        entity.boundaryPath.vertexLocation = {x: null, y: null}
+                        entity.boundaryPath.bulge = 0;
+                        switch (curr.code) {
+                            case 72:
+                                entity.boundaryPath.hasBulge = curr.value;
+                                break;
+                            case 73:
+                                entity.boundaryPath.isClosed = curr.value;
+                                break;
+                            case 93:
+                                entity.boundaryPath.numVertices = curr.value;
+                                break;
+                            case 10:
+                                entity.boundaryPath.vertexLocation.x = curr.value;
+                                break;
+                            case 20:
+                                entity.boundaryPath.vertexLocation.y = curr.value;
+                                break;
+                            case 42:
+                                entity.boundaryPath.bulge = curr.value;
+                                break;
+                            default:
+                                console.log('Some shit we do not know how to handle in a HATCH POLYLINE. (Fuck you)^2')
+                                break;
+                        }
+                    } else if (entity.boundaryPath.type !== BoundaryPathTypes[2] && curr.code === 93) {
                         entity.boundaryPath.numEdges = curr.value;
                     }
                 }
