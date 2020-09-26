@@ -243,11 +243,82 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                                 entity.boundaryPath.isCounterClockwise = curr.value;
                                                 break;
                                             default:
-                                                console.log(`Unknown code for HATCH with edge type of ELLIPSE code: ${curr.code} value: ${JSON.stringify(curr.value)}`)
+                                                console.log(`Unknown code for HATCH with edge type of ELLIPSE code: ${curr.code} value: curr.value)`)
                                                 break;
                                         }
+                                    case 'spline':
+                                        entity.boundaryPath.controlPoint = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        entity.boundaryPath.fitDatum = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        entity.boundaryPath.startTangent = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        entity.boundaryPath.endTangent = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        switch (curr.code) {
+                                            case 94:
+                                                entity.boundaryPath.degree = curr.value;
+                                                break;
+                                            // are the next two bools? if so, rename
+                                            case 73:
+                                                entity.boundaryPath.rational = curr.value;
+                                                break;
+                                            case 74:
+                                                entity.boundaryPath.periodic = curr.value;
+                                                break;
+                                            case 95:
+                                                entity.boundaryPath.numKnots = curr.value;
+                                                break;
+                                            case 96:
+                                                entity.boundaryPath.numControlPoints = curr.value;
+                                                break;
+                                            case 40:
+                                                entity.boundaryPath.knotValues = curr.value; // there are multiple. need to parse
+                                                break;
+                                            case 10:
+                                                entity.boundaryPath.controlPoint.x = curr.value;
+                                                break;
+                                            case 20:
+                                                entity.boundaryPath.controlPoint.y = curr.value;
+                                                break;
+                                            case 42:
+                                                entity.boundaryPath.weights = curr.value;
+                                                break;
+                                            case 97:
+                                                entity.boundaryPath.numFitData = curr.value;
+                                                break;
+                                            case 11:
+                                                entity.boundaryPath.fitDatum.x = curr.value;
+                                                break;
+                                            case 21:
+                                                entity.boundaryPath.fitDatum.y = curr.value;
+                                                break;
+                                            case 12:
+                                                entity.boundaryPath.startTangent.x = curr.value;
+                                                break;
+                                            case 22:
+                                                entity.boundaryPath.startTangent.y = curr.value;
+                                                break;
+                                            case 13:
+                                                entity.boundaryPath.endTangent.x = curr.value;
+                                                break;
+                                            case 23:
+                                                entity.boundaryPath.endTangent.y = curr.value;
+                                                break;                                            
+                                            default:
+                                                console.log(`Unknown code for HATCH with edge type of SPLINE code: ${curr.code} value: ${JSON.stringify(curr.value)}`)
+                                                break;                                                
+                                        }
                                     default:
-                                        console.log('HATCH not polyline with edgeType !== line. Deal later.')
+                                        console.log(`HATCH not polyline with edgeType ${entity.boundaryPath.edgeType}. Deal later.`)
                                         break;
                                 }
                         }
