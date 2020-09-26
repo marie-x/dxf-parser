@@ -178,7 +178,9 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                                 entity.boundaryPath.edgeData.endPoint.y = curr.value;
                                                 break;
                                         }
+                                    // could be smarter about handling shared attributes of arc and ellipse. not feeling smart.
                                     case 'arc':
+                                        // This is showing up for line. WTF?
                                         entity.boundaryPath.centerPoint = {
                                             x: null,
                                             y: null,
@@ -204,6 +206,44 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                                 break;
                                             default:
                                                 console.log(`Unknown code for HATCH with edge type of ARC code: ${curr.code} value: ${JSON.stringify(curr.value)}`)
+                                                break;
+                                        }
+                                    case 'ellipse':
+                                        entity.boundaryPath.centerPoint = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        entity.boundaryPath.endPoint = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        switch(curr.code) {
+                                            case 10:
+                                                entity.boundaryPath.centerPoint.x = curr.value;
+                                                break;
+                                            case 20:
+                                                entity.boundaryPath.centerPoint.y = curr.value;
+                                                break;
+                                            case 11:
+                                                entity.boundaryPath.endPoint.x = curr.value;
+                                                break;
+                                            case 21:
+                                                entity.boundaryPath.endPoint.y = curr.value;
+                                                break;
+                                            case 40:
+                                                entity.boundaryPath.minorAxisLength = curr.value;
+                                                break;
+                                            case 50:
+                                                entity.boundaryPath.startAngle = curr.value;
+                                                break;
+                                            case 51:
+                                                entity.boundaryPath.endAngle = curr.value;
+                                                break;
+                                            case 73:
+                                                entity.boundaryPath.isCounterClockwise = curr.value;
+                                                break;
+                                            default:
+                                                console.log(`Unknown code for HATCH with edge type of ELLIPSE code: ${curr.code} value: ${JSON.stringify(curr.value)}`)
                                                 break;
                                         }
                                     default:
