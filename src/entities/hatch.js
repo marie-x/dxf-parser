@@ -5,9 +5,20 @@ export default function EntityParser() {}
 
 EntityParser.ForEntityName = 'HATCH';
 
+var BoundaryPathTypes = {
+    0: 'default',
+    1: 'external',
+    2: 'polyline',
+    4: 'derived',
+    8: 'textbox',
+    16: 'outermost',
+}
+
+
 EntityParser.prototype.parseEntity = function(scanner, curr) {
-    var entity, endAngle;
+    var entity;
     entity = { type: curr.value };
+    entity.boundaryPath = {};
     curr = scanner.next();
     while(curr !== 'EOF') {
         if(curr.code === 0) break;
@@ -65,7 +76,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.offsetVector = curr.value;
                 break;
             case 99:
-                entity.numberDegenerateBoundaryPaths = curr.value;
+                entity.boundaryPath.numDegeneratePaths = curr.value;
                 break;
             // 10/20 should probably use parsePoint helper
             // Also, 10 is a repeat, which, I guess means order matters . . .
@@ -93,8 +104,9 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 break;
             default: // ignored attribute
                 if (!helpers.checkCommonEntityProperties(entity, curr)) {
-                    console.log(`curr.code = ${curr.code}`);
-                    console.log(curr.value);
+                    if (curr.code === 92) {
+                        entity.boundaryPath.type = BoundaryPathTypes[curr.value];
+                    }
                 }
                 break;
         }
