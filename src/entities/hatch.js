@@ -348,7 +348,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                     // default:
                                     //     console.log(`HATCH not polyline with edgeType ${entity.boundaryPath.edgeType}. Deal later.`)
                                     //     break;
-                                }
+                                // }
                         }
                     }
                 }
