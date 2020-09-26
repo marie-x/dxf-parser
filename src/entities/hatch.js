@@ -107,6 +107,9 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                     if (curr.code === 92) {
                         entity.boundaryPath.type = BoundaryPathTypes[curr.value];
                     }
+                    if (entity.boundaryPath.type !== BoundaryPathTypes[2] && curr.code === 93) {
+                        entity.boundaryPath.numEdges = curr.value;
+                    }
                 }
                 break;
         }
