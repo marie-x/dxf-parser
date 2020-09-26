@@ -43,6 +43,10 @@ export function parsePoint(scanner) {
     return point;
 };
 
+export function parseBoundaryPath(scanner) {
+    console.log(scanner)
+}
+
 /**
  * Attempts to parse codes common to all entities. Returns true if the group
  * was handled by this function.
