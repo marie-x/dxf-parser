@@ -156,6 +156,30 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                             case 330:
                                 entity.boundaryPath.sourceObjects = curr.value; // going to need to write a function to parse this
                                 break;
+                            default:
+                                // Edge data group codes based on edge type
+                                switch (entity.boundaryPath.edgeType) {
+                                    case 'line':
+                                        entity.boundaryPath.edgeData.startPoint = {x: null, y: null}
+                                        entity.boundaryPath.edgeData.endPoint = {x: null, y: null}
+                                        switch(curr.code) {
+                                            case 10:
+                                                entity.boundaryPath.edgeData.startPoint.x = curr.value;
+                                                break;
+                                            case 20:
+                                                entity.boundaryPath.edgeData.startPoint.y = curr.value;
+                                                break;
+                                            case 11:
+                                                entity.boundaryPath.edgeData.endPoint.x = curr.value;
+                                                break;
+                                            case 21:
+                                                entity.boundaryPath.edgeData.endPoint.y = curr.value;
+                                                break;
+                                        }
+                                    default:
+                                        console.log('HATCH not polyline with edgeType !== line. Deal later.')
+                                        break;
+                                }
                         }
                     }
                 }
