@@ -22,6 +22,7 @@ var EdgeTypes = {
 }
 
 EntityParser.prototype.parseEntity = function(scanner, curr) {
+    console.log(curr)
     var entity;
     entity = { type: curr.value };
     // TODO: clean this up by adding all of this to constructor
@@ -113,13 +114,11 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
             case 99:
                 entity.boundaryPath.numDegeneratePaths = curr.value;
                 break;
-            // 10/20 should probably use parsePoint helper
-            // Also, 10 is a repeat, which, I guess means order matters . . .
             case 10:
-                entity.seedPointX = curr.value;
+                entity.seedPoint.x = curr.value;
                 break;
             case 20:
-                entity.seedPointY = curr.value;
+                entity.seedPoint.y = curr.value;
                 break;
             case 450:
                 entity.solidHatchOrGradient = curr.value;
