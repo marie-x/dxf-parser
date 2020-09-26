@@ -94,7 +94,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 break;
             default: // ignored attribute
                 if (!helpers.checkCommonEntityProperties(entity, curr)) {
-                    helpers.parseBoundaryPaths(scanner, current, entity)
+                    helpers.parseBoundaryPaths(scanner, curr, entity)
                 }
                 break;
         }
