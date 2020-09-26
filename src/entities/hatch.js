@@ -43,7 +43,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 entity.associativityFlag = curr.value;
                 break;
             case 91:
-                entity.numberOfBoundaryPaths = curr.value;
+                entity.boundaryPath.numPaths = curr.value;
                 break;
             case 75:
                 entity.hatchStyle = curr.value;
