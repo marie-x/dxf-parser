@@ -16,8 +16,8 @@ var BoundaryPathTypes = {
 
 var EdgeTypes = {
     1: 'line',
-    2: 'circluar-arc',
-    3: 'elliptical-arc',
+    2: 'arc',
+    3: 'ellipse',
     4: 'spline', // Lord, have mercy on our souls
 }
 
@@ -176,6 +176,34 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                                                 break;
                                             case 21:
                                                 entity.boundaryPath.edgeData.endPoint.y = curr.value;
+                                                break;
+                                        }
+                                    case 'arc':
+                                        entity.boundaryPath.centerPoint = {
+                                            x: null,
+                                            y: null,
+                                        }
+                                        switch(curr.code) {
+                                            case 10:
+                                                entity.boundaryPath.centerPoint.x = curr.value;
+                                                break;
+                                            case 20:
+                                                entity.boundaryPath.centerPoint.y = curr.value;
+                                                break;
+                                            case 40:
+                                                entity.boundaryPath.radius = curr.value;
+                                                break;
+                                            case 50:
+                                                entity.boundaryPath.startAngle = curr.value;
+                                                break;
+                                            case 51:
+                                                entity.boundaryPath.endAngle = curr.value;
+                                                break;
+                                            case 73:
+                                                entity.boundaryPath.isCounterClockwise = curr.value;
+                                                break;
+                                            default:
+                                                console.log(`Unknown code for HATCH with edge type of ARC code: ${curr.code} value: ${JSON.stringify(curr.value)}`)
                                                 break;
                                         }
                                     default:
