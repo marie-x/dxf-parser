@@ -1,7 +1,7 @@
 
 import * as helpers from '../ParseHelpers'
 
-export default function EntityParser() {}
+export default function EntityParser() { }
 
 EntityParser.ForEntityName = 'HATCH';
 
@@ -21,21 +21,20 @@ var EdgeTypes = {
     4: 'spline', // Lord, have mercy on our souls
 }
 
-
-
-EntityParser.prototype.parseEntity = function(scanner, curr) {
+EntityParser.prototype.parseEntity = function (scanner, curr) {
+    console.log('EntityParser.prototype.parseEntity HATCH')
     // console.log(curr)
-    var entity = { 
-        type: curr.value, 
+    var entity = {
+        type: curr.value,
         elevationPoint: { x: null, y: null, z: null },
         extrusionDirection: { x: null, y: null, z: null }
     };
 
     curr = scanner.next();
-    while(curr !== 'EOF') {
-        if(curr.code === 0) break;
+    while (curr !== 'EOF') {
+        if (curr.code === 0) break;
 
-        switch(curr.code) {
+        switch (curr.code) {
             // this is eating subsequent 10s and 20s
             // case 10:
             //     entity.elevationPoint.x = curr.value;
