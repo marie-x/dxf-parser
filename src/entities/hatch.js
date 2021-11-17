@@ -5,15 +5,17 @@ export default function EntityParser() { }
 EntityParser.ForEntityName = 'HATCH';
 
 var BoundaryPathTypes = {
+    // primitives
     0: 'default',
     1: 'external',
     2: 'polyline',
     4: 'derived',
     8: 'textbox',
     16: 'outermost',
-    6: 'polyline derived',
-    7: 'external polyline derived',
-    22: 'polyline derived outermost'
+    // derived
+    6: 'polyline derived', // 4 + 2
+    7: 'external polyline derived', // 4 + 2 + 1
+    22: 'polyline derived outermost' // 16 + 4 +2
 };
 
 var EdgeTypes = {
@@ -79,6 +81,7 @@ EntityParser.prototype.parseEntity = function (scanner, curr) {
                 break;
             case 91:
                 entity.boundaryPaths = new Array(curr.value);
+                parseBoundaryPaths(entity, scanner, curr);
                 break;
             case 75:
                 // Hatch style:
@@ -151,10 +154,10 @@ EntityParser.prototype.parseEntity = function (scanner, curr) {
                 // always "ACAD" or "AcDbBlockRepETag" TODO: could this be a start/stop code?
                 break;
             case 1071:
-                console.log(`Counter? ${curr.value}`);
+                // console.log(`Counter? ${curr.value}`);
                 break;
             default:
-                console.log(`${curr.code} = ${curr.value}`);
+                // console.log(`${curr.code} = ${curr.value}`);
                 break;
         }
         // if (entity.numberOfSeedPoints && entity.numberOfSeedPoints > 0) {
@@ -163,32 +166,43 @@ EntityParser.prototype.parseEntity = function (scanner, curr) {
 
         curr = scanner.next();
     }
-    console.log(entity)
     return entity;
 };
 
-export function parseBoundaryPaths(entity, curr) {
-    var paths = [];
-    var numPaths = 0;
-    if (!entity.numPaths || entity.numPaths === 0) {
-        return false;
-    }
-    var boundaryPathData = entity.boundaryPathData;
-    if (boundaryPathData.type === 'polyline') {
-        console.log('Handle polyline boundary data. Barf.')
-    } else {
-        switch (curr.code) {
-            case 93:
-                boundaryPathData.numEdges = curr.value;
-                break;
-            case 72:
-                boundaryPathData.edgeType = EdgeTypes[curr.value];
-                break;
-            default:
-                console.log(`unahandled boundaryPath code ${curr.code}`)
-                break;
+export function parseBoundaryPaths(entity, scanner, curr) {
+    console.log('New boundary paths');
+    const numBoundaryPaths = curr.value;
+    let boundaryPathCount = 0;
+    while (boundaryPathCount < numBoundaryPaths) {
+        if (curr.code === 92) { //
+            entity.boundaryPaths[boundaryPathCount].type = curr.value;
+            boundaryPathCount++;
         }
+        curr = scanner.next()
     }
+
+    return {entity, scanner, curr};
+    // var paths = [];
+    // var numPaths = 0;
+    // if (!entity.numPaths || entity.numPaths === 0) {
+    //     return false;
+    // }
+    // var boundaryPathData = entity.boundaryPathData;
+    // if (boundaryPathData.type === 'polyline') {
+    //     console.log('Handle polyline boundary data. Barf.')
+    // } else {
+    //     switch (curr.code) {
+    //         case 93:
+    //             boundaryPathData.numEdges = curr.value;
+    //             break;
+    //         case 72:
+    //             boundaryPathData.edgeType = EdgeTypes[curr.value];
+    //             break;
+    //         default:
+    //             console.log(`unahandled boundaryPath code ${curr.code}`)
+    //             break;
+    //     }
+    // }
 
     // var boundaryPaths = { type: null};
     // var edgeTypeData;

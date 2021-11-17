@@ -308,6 +308,7 @@
           "textHeight": 0.09375,
           "text": "Sheet No.",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -346,6 +347,7 @@
           "textHeight": 0.09375,
           "text": "Scale:",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -405,6 +407,7 @@
           "textHeight": 0.09375,
           "text": "Drawn:",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -422,6 +425,7 @@
           "textHeight": 0.09375,
           "text": "Date:",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -460,6 +464,7 @@
           "textHeight": 0.09375,
           "text": "Project No.",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -478,6 +483,7 @@
           "text": "Project Name:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -663,6 +669,7 @@
           "textHeight": 0.0625,
           "text": "NO.",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.43459372187382,
@@ -686,6 +693,7 @@
           "textHeight": 0.0625,
           "text": "REVISION",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.43459372187382,
@@ -709,6 +717,7 @@
           "textHeight": 0.0625,
           "text": "BY",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.43459372187382,
@@ -732,6 +741,7 @@
           "textHeight": 0.0625,
           "text": "BY",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.47614878817657,
@@ -755,6 +765,7 @@
           "textHeight": 0.0625,
           "text": "CKD",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.38472723081318,
@@ -778,6 +789,7 @@
           "textHeight": 0.0625,
           "text": "DATE",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.47614878817657,
@@ -801,6 +813,7 @@
           "textHeight": 0.0625,
           "text": "ISSUE",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.38472723081318,
@@ -1204,6 +1217,7 @@
           "text": "Sheet Title:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1223,6 +1237,7 @@
           "textHeight": 0.0646223872815218,
           "text": "PRODUCTS, INC.",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1242,9 +1257,127 @@
           "textHeight": 0.0646223872815218,
           "text": "AMERICAN",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.50104980864736,
+            "y": 5.1056799989672,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0026346327983943,
+          "seedPoints": [
+            null,
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 0
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.49609686039851,
+            "y": 5.348655471566379,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0026346327983943,
+          "seedPoints": [
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 1
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.76682083863293,
+            "y": 4.870484438422051,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0025954705126941,
+          "seedPoints": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 2
         },
         {
           "type": "TEXT",
@@ -1261,6 +1394,7 @@
           "textHeight": 0.0939961996822135,
           "text": "CONTACT:KERRI BEALS",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1280,6 +1414,7 @@
           "textHeight": 0.0939961996822135,
           "text": "12157 W LINEBAUGH AVENUE #335",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1299,6 +1434,7 @@
           "textHeight": 0.0939961996822135,
           "text": "AMERICAN PRODUCTS, INC. (API)",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1318,6 +1454,7 @@
           "textHeight": 0.0939961996822135,
           "text": "PH (813)925-0144 /",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1337,6 +1474,7 @@
           "textHeight": 0.0939961996822135,
           "text": "TAMPA, FL 33626",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1356,6 +1494,7 @@
           "textHeight": 0.0939961996822135,
           "text": "WWW.AMERICANPROD.COM",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -1387,6 +1526,39 @@
           }
         },
         {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 21.29286607060596,
+            "y": -40.00154397620248,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 1,
+          "boundaryPaths": [
+            null
+          ],
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 3
+        },
+        {
           "type": "LWPOLYLINE",
           "vertices": [
             {
@@ -1416,6 +1588,146 @@
           }
         },
         {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.82902716063492,
+            "y": 5.360821656590936,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 4
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 16.03634408402999,
+            "y": 5.033129334391341,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 5
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.86759763619753,
+            "y": 4.900606763887744,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 6
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.67715498723808,
+            "y": 5.127099975010772,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 7
+        },
+        {
           "type": "TEXT",
           "handle": "E63",
           "ownerHandle": "E1C",
@@ -1429,6 +1741,7 @@
           "text": "FLORIDA GLASS",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "TB-Logo",
           "halign": 1,
           "endPoint": {
             "x": 15.80487678893379,
@@ -1453,6 +1766,7 @@
           "text": "OF TAMPA BAY",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "TB-Logo",
           "halign": 1,
           "endPoint": {
             "x": 16.1156678639845,
@@ -1476,6 +1790,7 @@
           "textHeight": 0.0625,
           "text": "13009 LYNMAR BOULEVARD",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -1499,6 +1814,7 @@
           "textHeight": 0.0625,
           "text": "TAMPA, FLORIDA 33626",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -1522,6 +1838,7 @@
           "textHeight": 0.0625,
           "text": "PHONE: (813) 925-1330",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -1545,6 +1862,7 @@
           "textHeight": 0.0625,
           "text": "FAX: (813) 925-1331",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -2094,6 +2412,39 @@
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": -6.070455529872234,
+            "y": 1.871178491492862,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "ANSI31",
+          "solidFlag": 0,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "hatchPatternAngle": 0,
+          "hatchPatternScale": 1,
+          "hatchPatternDoubleFlag": 0,
+          "patternDefinitionLines": [
+            null
+          ],
+          "pixelSize": 0.0016305181954037,
+          "seedPoints": [
+            null
+          ],
+          "handle": 8
         }
       ]
     },
@@ -2199,7 +2550,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -2344,7 +2699,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -2507,7 +2866,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -2688,7 +3051,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;FRAME SIZE"
+          "text": "\\A1;FRAME SIZE",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -2869,7 +3233,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;DAYLIGHT OPENING"
+          "text": "\\A1;DAYLIGHT OPENING",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -3050,7 +3415,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;DAYLIGHT OPENING"
+          "text": "\\A1;DAYLIGHT OPENING",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -3195,7 +3561,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -3340,7 +3707,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -3485,7 +3853,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -3666,7 +4035,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;ROUGH OPENING"
+          "text": "\\A1;ROUGH OPENING",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -3847,7 +4217,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -4028,7 +4399,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -4220,7 +4592,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\" typ."
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\" typ.",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -4377,7 +4750,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -4534,7 +4911,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -4726,7 +5107,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -4871,7 +5253,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -5034,7 +5420,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;D.L.O."
+          "text": "\\A1;D.L.O.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -5197,7 +5587,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;D.L.O."
+          "text": "\\A1;D.L.O.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -5378,7 +5772,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2\""
+          "text": "\\A1;2\"",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -5559,7 +5957,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;7{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;7{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -5622,6 +6021,7 @@
           "ownerHandle": "20A5",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 4.961569703240868,
@@ -5635,6 +6035,7 @@
           "ownerHandle": "20A5",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 4.964102075624985,
@@ -5648,6 +6049,7 @@
           "ownerHandle": "20A5",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 11.57768473007549,
@@ -5661,6 +6063,7 @@
           "ownerHandle": "20A5",
           "inPaperSpace": true,
           "layer": "0",
+          "attributesFollow": 1,
           "name": "11x17",
           "position": {
             "x": -22.88944543086797,
@@ -5790,7 +6193,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;D.L.O."
+          "text": "\\A1;D.L.O.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -5953,7 +6360,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;D.L.O."
+          "text": "\\A1;D.L.O.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -6116,7 +6527,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;D.L.O."
+          "text": "\\A1;D.L.O.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -6279,7 +6694,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;D.L.O."
+          "text": "\\A1;D.L.O.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -7025,6 +7444,7 @@
           "textHeight": 0.09375,
           "text": "Sheet No.",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7063,6 +7483,7 @@
           "textHeight": 0.09375,
           "text": "Scale:",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7122,6 +7543,7 @@
           "textHeight": 0.09375,
           "text": "Drawn:",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7139,6 +7561,7 @@
           "textHeight": 0.09375,
           "text": "Date:",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7177,6 +7600,7 @@
           "textHeight": 0.09375,
           "text": "Project No.",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7195,6 +7619,7 @@
           "text": "Project Name:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7380,6 +7805,7 @@
           "textHeight": 0.0625,
           "text": "NO.",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.43459372187382,
@@ -7403,6 +7829,7 @@
           "textHeight": 0.0625,
           "text": "REVISION",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.43459372187382,
@@ -7426,6 +7853,7 @@
           "textHeight": 0.0625,
           "text": "BY",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.43459372187382,
@@ -7449,6 +7877,7 @@
           "textHeight": 0.0625,
           "text": "BY",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.47614878817657,
@@ -7472,6 +7901,7 @@
           "textHeight": 0.0625,
           "text": "CKD",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.38472723081318,
@@ -7495,6 +7925,7 @@
           "textHeight": 0.0625,
           "text": "DATE",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.47614878817657,
@@ -7518,6 +7949,7 @@
           "textHeight": 0.0625,
           "text": "ISSUE",
           "rotation": 90,
+          "styleName": "FG-Title",
           "halign": 1,
           "endPoint": {
             "x": 15.38472723081318,
@@ -7921,6 +8353,7 @@
           "text": "Sheet Title:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7939,6 +8372,7 @@
           "textHeight": 0.0646223872815218,
           "text": "PRODUCTS, INC.",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7957,9 +8391,127 @@
           "textHeight": 0.0646223872815218,
           "text": "AMERICAN",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.50104980864736,
+            "y": 5.1056799989672,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0026346327983943,
+          "seedPoints": [
+            null,
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 9
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.49609686039851,
+            "y": 5.348655471566379,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0026346327983943,
+          "seedPoints": [
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 10
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.76682083863293,
+            "y": 4.870484438422051,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0025954705126941,
+          "seedPoints": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 11
         },
         {
           "type": "TEXT",
@@ -7975,6 +8527,7 @@
           "textHeight": 0.0939961996822135,
           "text": "CONTACT:KERRI BEALS",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -7993,6 +8546,7 @@
           "textHeight": 0.0939961996822135,
           "text": "12157 W LINEBAUGH AVENUE #335",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -8011,6 +8565,7 @@
           "textHeight": 0.0939961996822135,
           "text": "AMERICAN PRODUCTS, INC. (API)",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -8029,6 +8584,7 @@
           "textHeight": 0.0939961996822135,
           "text": "PH (813)925-0144 /",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -8047,6 +8603,7 @@
           "textHeight": 0.0939961996822135,
           "text": "TAMPA, FL 33626",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -8065,6 +8622,7 @@
           "textHeight": 0.0939961996822135,
           "text": "WWW.AMERICANPROD.COM",
           "rotation": 90,
+          "styleName": "APIFINISH",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -8093,6 +8651,39 @@
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 21.29286607060596,
+            "y": -40.00154397620248,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 1,
+          "boundaryPaths": [
+            null
+          ],
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 12
         },
         {
           "type": "LWPOLYLINE",
@@ -8125,6 +8716,146 @@
           }
         },
         {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.82902716063492,
+            "y": 5.360821656590936,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 13
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 16.03634408402999,
+            "y": 5.033129334391341,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 14
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.86759763619753,
+            "y": 4.900606763887744,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 15
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 15.67715498723808,
+            "y": 5.127099975010772,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0024095015482814,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 1,
+            "numberColors": 2,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 1,
+            "type": "LINEAR"
+          },
+          "handle": 16
+        },
+        {
           "type": "TEXT",
           "handle": "231F",
           "ownerHandle": "22DF",
@@ -8139,6 +8870,7 @@
           "text": "FLORIDA GLASS",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "TB-Logo",
           "halign": 1,
           "endPoint": {
             "x": 15.80487678893379,
@@ -8164,6 +8896,7 @@
           "text": "OF TAMPA BAY",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "TB-Logo",
           "halign": 1,
           "endPoint": {
             "x": 16.1156678639845,
@@ -8188,6 +8921,7 @@
           "textHeight": 0.0625,
           "text": "13009 LYNMAR BOULEVARD",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -8212,6 +8946,7 @@
           "textHeight": 0.0625,
           "text": "TAMPA, FLORIDA 33626",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -8236,6 +8971,7 @@
           "textHeight": 0.0625,
           "text": "PHONE: (813) 925-1330",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -8260,6 +8996,7 @@
           "textHeight": 0.0625,
           "text": "FAX: (813) 925-1331",
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "halign": 1,
           "endPoint": {
             "x": 15.875,
@@ -8292,6 +9029,7 @@
           "ownerHandle": "21B1",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 11.24055374999194,
@@ -8311,7 +9049,8 @@
             "z": 0
           },
           "textHeight": 0.25,
-          "text": "%%UTypical Assembly Detail"
+          "text": "%%UTypical Assembly Detail",
+          "styleName": "FG-Title"
         },
         {
           "type": "TEXT",
@@ -8325,7 +9064,8 @@
             "z": 0
           },
           "textHeight": 0.25,
-          "text": "%%UTypical Horizontal /"
+          "text": "%%UTypical Horizontal /",
+          "styleName": "FG-Title"
         },
         {
           "type": "TEXT",
@@ -8339,7 +9079,8 @@
             "z": 0
           },
           "textHeight": 0.25,
-          "text": "%%UVertical Intersection"
+          "text": "%%UVertical Intersection",
+          "styleName": "FG-Title"
         },
         {
           "type": "INSERT",
@@ -8347,6 +9088,7 @@
           "ownerHandle": "21B1",
           "inPaperSpace": true,
           "layer": "0",
+          "attributesFollow": 1,
           "name": "11x17",
           "position": {
             "x": -22.88944543086797,
@@ -8505,7 +9247,8 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;{\\H1.000000x;\\S1#2;}\""
+          "text": "\\A1;{\\H1.000000x;\\S1#2;}\"",
+          "styleName": "FG-Note"
         },
         {
           "type": "POINT",
@@ -8698,7 +9441,11 @@
           "width": 0,
           "attachmentPoint": 5,
           "drawingDirection": 1,
-          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\" typ."
+          "text": "\\A1;2{\\H1.000000x;\\S1#2;}\" typ.",
+          "styleName": "FG-Note",
+          "xVector": 1e-16,
+          "yVector": 1,
+          "zVector": 0
         },
         {
           "type": "POINT",
@@ -8941,6 +9688,7 @@
           },
           "textHeight": 0.125,
           "text": "Section",
+          "styleName": "FG-Title",
           "endPoint": {
             "x": 0.0411014722480356,
             "y": -0.117137496905297,
@@ -9005,6 +9753,7 @@
           },
           "textHeight": 0.09375,
           "text": "SCALE:",
+          "styleName": "FG-Title",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -9021,6 +9770,7 @@
           },
           "textHeight": 0.09375,
           "text": "ARCH. REF.",
+          "styleName": "FG-Title",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -9194,6 +9944,7 @@
           },
           "textHeight": 0.125,
           "text": "Detail",
+          "styleName": "FG-Title",
           "endPoint": {
             "x": 0.0411014722480356,
             "y": -0.117137496905297,
@@ -9258,6 +10009,7 @@
           },
           "textHeight": 0.09375,
           "text": "SCALE:",
+          "styleName": "FG-Title",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -9274,6 +10026,7 @@
           },
           "textHeight": 0.09375,
           "text": "ARCH. REF.",
+          "styleName": "FG-Title",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -9699,6 +10452,7 @@
           },
           "textHeight": 0.1,
           "text": "C",
+          "styleName": "ITALIC",
           "halign": 1,
           "endPoint": {
             "x": 0,
@@ -9722,6 +10476,7 @@
           },
           "textHeight": 0.125,
           "text": "L",
+          "styleName": "ITALIC",
           "halign": 1,
           "endPoint": {
             "x": 0,
@@ -16327,6 +17082,7 @@
           },
           "textHeight": 0.1,
           "text": "sym",
+          "styleName": "ITALIC",
           "halign": 1,
           "endPoint": {
             "x": 0.0011131493913883,
@@ -45014,6 +45770,7 @@
           "handle": "BA6E",
           "ownerHandle": "5C34",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -45033,6 +45790,7 @@
           "handle": "BA6F",
           "ownerHandle": "5C34",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -45054,6 +45812,7 @@
           "layer": "FG-Dim",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -45075,6 +45834,7 @@
           "layer": "FG-Dim",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -45084,6 +45844,7 @@
           "layer": "FG-Dim",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.5766543765158,
             "y": 349.2930568884609,
@@ -45102,6 +45863,7 @@
           "layer": "FG-Dim",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "lineweight": -2,
           "name": "_OPEN",
           "position": {
@@ -45121,6 +45883,7 @@
           "layer": "FG-Dim",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "lineweight": -2,
           "name": "_OPEN",
           "position": {
@@ -45140,6 +45903,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.6721232622531,
             "y": 349.356056888461,
@@ -45153,6 +45917,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.6721232622529,
             "y": 349.2300568884608,
@@ -45166,6 +45931,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.5766543765158,
             "y": 349.2300568884608,
@@ -46157,6 +46923,7 @@
           "handle": "BAAA",
           "ownerHandle": "5C82",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -46176,6 +46943,7 @@
           "handle": "BAAB",
           "ownerHandle": "5C82",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -46183,6 +46951,7 @@
           "handle": "BAAC",
           "ownerHandle": "5C82",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "position": {
             "x": 662.087622187362,
             "y": 349.4911403652703,
@@ -46199,6 +46968,7 @@
           "handle": "BAAD",
           "ownerHandle": "5C82",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2,
           "name": "_OPEN",
           "position": {
@@ -46218,6 +46988,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.9175995643408,
             "y": 349.3600622278067,
@@ -46231,6 +47002,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.943123262253,
             "y": 349.4030568884609,
@@ -46270,6 +47042,7 @@
           "handle": "BAB0",
           "ownerHandle": "5C8B",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -46289,6 +47062,7 @@
           "handle": "BAB1",
           "ownerHandle": "5C8B",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2
         },
         {
@@ -46296,6 +47070,7 @@
           "handle": "BAB2",
           "ownerHandle": "5C8B",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.4874794048299,
             "y": 349.1232314007118,
@@ -46312,6 +47087,7 @@
           "handle": "BAB3",
           "ownerHandle": "5C8B",
           "layer": "FG-Dim",
+          "transparencyValue": 16777216,
           "lineweight": -2,
           "name": "_OPEN",
           "position": {
@@ -46331,6 +47107,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.6827649208622,
             "y": 349.2256283170322,
@@ -46344,6 +47121,7 @@
           "layer": "Defpoints",
           "colorIndex": 0,
           "color": 0,
+          "transparencyValue": 16777216,
           "position": {
             "x": 661.7466148725192,
             "y": 349.2890568884617,
@@ -59217,6 +59995,7 @@
           "ownerHandle": "1FDD",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 2.540957634041468,
@@ -59230,6 +60009,7 @@
           "ownerHandle": "1FDD",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 6.791896643672551,
@@ -59243,6 +60023,7 @@
           "ownerHandle": "1FDD",
           "inPaperSpace": true,
           "layer": "FG-Title",
+          "attributesFollow": 1,
           "name": "Detail Title",
           "position": {
             "x": 11.20760072619196,
@@ -59256,6 +60037,7 @@
           "ownerHandle": "1FDD",
           "inPaperSpace": true,
           "layer": "0",
+          "attributesFollow": 1,
           "name": "11x17",
           "position": {
             "x": -22.88944543086797,
@@ -60503,6 +61285,39 @@
       "xrefPath": "",
       "entities": [
         {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 555.3578125400923,
+            "y": 332.9012867391587,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "ANSI31",
+          "solidFlag": 0,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "hatchPatternAngle": 89.99999999999999,
+          "hatchPatternScale": 0.625,
+          "hatchPatternDoubleFlag": 0,
+          "patternDefinitionLines": [
+            null
+          ],
+          "pixelSize": 0.0016574368338441,
+          "seedPoints": [
+            null
+          ],
+          "handle": 17
+        },
+        {
           "type": "LWPOLYLINE",
           "vertices": [
             {
@@ -60992,6 +61807,7 @@
           "text": "PRODUCTS, INC.",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61011,9 +61827,127 @@
           "text": "AMERICAN",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 38.39047493491882,
+            "y": 7.541725867426748,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0026346327983943,
+          "seedPoints": [
+            null,
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 18
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 38.38552198666998,
+            "y": 7.784701340025925,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0026346327983943,
+          "seedPoints": [
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 19
+        },
+        {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 38.6562459649044,
+            "y": 7.306530306881597,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 0,
+          "boundaryPaths": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "boundaryAnnotationFlag": 1,
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "pixelSize": 0.0025954705126941,
+          "seedPoints": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 20
         },
         {
           "type": "TEXT",
@@ -61030,6 +61964,7 @@
           "text": "CONTACT: KERRI BEALS",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61049,6 +61984,7 @@
           "text": "12157 W. LINEBAUGH AVENUE #335",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61068,6 +62004,7 @@
           "text": "AMERICAN PRODUCTS, INC. (API)",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61087,6 +62024,7 @@
           "text": "PH (813)925-0144",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61106,6 +62044,7 @@
           "text": "TAMPA, FL 33626",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61125,6 +62064,7 @@
           "text": "WWW.AMERICANPROD.COM",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61155,6 +62095,39 @@
           }
         },
         {
+          "type": "HATCH",
+          "elevationPoint": {
+            "x": 44.1822911968774,
+            "y": -37.56549810774294,
+            "z": 0
+          },
+          "extrusionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "hatchPatternName": "SOLID",
+          "solidFlag": 1,
+          "associativityFlag": 1,
+          "boundaryPaths": [
+            null
+          ],
+          "hatchStyle": 0,
+          "hatchPatternType": 1,
+          "seedPoints": [
+            null
+          ],
+          "gradient": {
+            "isSingleColor": 0,
+            "numberColors": 0,
+            "rotationAngle": 0,
+            "definition": 0,
+            "tint": 0,
+            "type": ""
+          },
+          "handle": 21
+        },
+        {
           "type": "TEXT",
           "handle": "99DD",
           "ownerHandle": "99C2",
@@ -61169,6 +62142,7 @@
           "text": "with storefront elevations and section",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61188,6 +62162,7 @@
           "text": "API Recommends that this note appear",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61207,6 +62182,7 @@
           "text": "view details in your blueprints.",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61244,6 +62220,7 @@
           "text": "American Products, Inc. (API). No substitutions",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61263,6 +62240,7 @@
           "text": "Storefront and related materials provided by",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61282,6 +62260,7 @@
           "text": "without written consent from store owner/",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61301,6 +62280,7 @@
           "text": "Architect. API (813)925-0144",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61338,6 +62318,7 @@
           "text": "Customer:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61357,6 +62338,7 @@
           "text": "Assembly:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61376,6 +62358,7 @@
           "text": "Scale:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61395,6 +62378,7 @@
           "text": "Drawn By:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61414,6 +62398,7 @@
           "text": "Date:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }
@@ -61451,6 +62436,7 @@
           "text": "Sheet:",
           "rotation": 90,
           "xScale": 0.85,
+          "styleName": "FG-Note",
           "extendedData": {
             "applicationName": "AcDbBlockRepETag"
           }

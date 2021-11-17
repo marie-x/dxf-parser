@@ -987,7 +987,123 @@
           "frozen": false,
           "visible": true,
           "colorIndex": 7,
-          "color": 16777215
+          "color": 16777215,
+          "lineType": "Continuous",
+          "lineWeight": 25
+        }
+      }
+    },
+    "style": {
+      "handle": "43",
+      "ownerHandle": "0",
+      "styles": {
+        "Standard": {
+          "name": "Standard",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "txt",
+          "bigFontName": ""
+        },
+        "textstyle0": {
+          "name": "textstyle0",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle1": {
+          "name": "textstyle1",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle2": {
+          "name": "textstyle2",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle3": {
+          "name": "textstyle3",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "STANDARD",
+          "bigFontName": ""
+        },
+        "textstyle4": {
+          "name": "textstyle4",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "STANDARD",
+          "bigFontName": ""
+        },
+        "textstyle5": {
+          "name": "textstyle5",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle6": {
+          "name": "textstyle6",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle7": {
+          "name": "textstyle7",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "qcadshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle8": {
+          "name": "textstyle8",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "qcadshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle9": {
+          "name": "textstyle9",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
+        },
+        "textstyle10": {
+          "name": "textstyle10",
+          "fixedTextHeight": 0,
+          "widthFactor": 1,
+          "obliqueAngle": 0,
+          "textGenerationFlags": 0,
+          "primaryFontName": "ltypeshp.shx",
+          "bigFontName": ""
         }
       }
     }

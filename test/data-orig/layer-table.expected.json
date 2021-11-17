@@ -3,18 +3,22 @@
   "ownerHandle": "0",
   "layers": {
     "0": {
-      "frozen": false,
       "name": "0",
+      "frozen": false,
       "visible": true,
       "colorIndex": 7,
-      "color": 16777215
+      "color": 16777215,
+      "lineType": "Continuous",
+      "lineWeight": -3
     },
     "Layer 1": {
-      "frozen": true,
       "name": "Layer 1",
+      "frozen": true,
       "visible": true,
       "colorIndex": 7,
-      "color": 16777215
+      "color": 16777215,
+      "lineType": "Continuous",
+      "lineWeight": -3
     }
   }
 }
