@@ -98,8 +98,8 @@ export default class Hatch implements IGeometry {
 				}
 				curr = scanner.next();
 		}
-        console.debug('HATCH entity:');
-        console.debug(entity);
+        // console.debug('HATCH entity:');
+        // console.debug(entity);
 		return entity;
 	}
     
