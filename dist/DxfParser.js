@@ -19,7 +19,10 @@ import Text from './entities/text';
 //import Vertex from './entities/';
 import log from 'loglevel';
 //log.setLevel('trace');
-log.setLevel('debug');
+//log.setLevel('debug');
+//log.setLevel('info');
+//log.setLevel('warn');
+log.setLevel('error');
 function registerDefaultEntityHandlers(dxfParser) {
     // Supported entities here (some entity code is still being refactored into this flow)
     dxfParser.registerEntityHandler(Face);

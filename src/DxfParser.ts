@@ -24,10 +24,10 @@ import log from 'loglevel';
 import IGeometry, { EntityName, IEntity, IPoint } from './entities/geomtry';
 
 //log.setLevel('trace');
-log.setLevel('debug');
+//log.setLevel('debug');
 //log.setLevel('info');
 //log.setLevel('warn');
-// log.setLevel('error');
+log.setLevel('error');
 //log.setLevel('silent');
 
 export interface IBlock {
