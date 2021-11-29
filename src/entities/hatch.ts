@@ -24,7 +24,7 @@ export interface IHatchEntity extends IEntity {
     hatchPatternName: string, // Code: 2
     solidFillFlag: boolean, // Code: 70
     patternFillColor?: number, // Code: 73 For MPolygon. AutoCad Color Index
-    assiciativityFlag: boolean, // Code: 71 Associativity flag (0 = non-associative; 1 = associative); for MPolygon, solid-fill flag (0 = lacks solid fill; 1 = has solid fill)
+    associativityFlag: boolean, // Code: 71 Associativity flag (0 = non-associative; 1 = associative); for MPolygon, solid-fill flag (0 = lacks solid fill; 1 = has solid fill)
     numPaths: number, // Code: 91
     boundaryPath: IBoundaryPath, // Code: varies Loop number of times defined in numPaths
     hatchStyle: HatchStyle, // Code: 75
@@ -38,7 +38,7 @@ export interface IHatchEntity extends IEntity {
 }
 
 export default class Hatch implements IGeometry {
-    public ForEntityName= 'HATCH' as const;
+    public ForEntityName = 'HATCH' as const;
 	public parseEntity(scanner: DxfArrayScanner, curr: IGroup) {
 		const entity = { type: curr.value } as IHatchEntity;
 		curr = scanner.next();
@@ -62,7 +62,7 @@ export default class Hatch implements IGeometry {
                         entity.patternFillColor = curr.value as number;
                         break;
                     case 71:
-                        entity.assiciativityFlag = curr.value as boolean;
+                        entity.associativityFlag = curr.value as boolean;
                         break;
                     case 91:
                         entity.numPaths = curr.value as number;
@@ -74,7 +74,7 @@ export default class Hatch implements IGeometry {
                     case 76:
                         entity.hatchPatternType = curr.value as HatchPatternType;
                         break;
-                    case 52:
+                    case 52:Directory 
                         entity.hatchPatternAngle = curr.value as number;
                         break;
                     case 41:

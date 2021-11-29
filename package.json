@@ -13,13 +13,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gdsestimating/dxf-parser.git"
+		"url": "https://github.com/marie-x/dxf-parser.git"
 	},
 	"bugs": {
-		"url": "https://github.com/gdsestimating/dxf-parser/issues",
+		"url": "https://github.com/marie-x/dxf-parser/issues",
 		"email": "bzuillsmith@gmail.com"
 	},
-	"homepage": "https://github.com/gdsestimating/dxf-parser",
+	"homepage": "https://github.com/marie-x/dxf-parser",
 	"author": "GDS Storefront Estimating (gdsestimating.com)",
 	"contributors": [
 		"Ben Zuill-Smith <bzuillsmith@gmail.com>"
